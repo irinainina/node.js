@@ -1,26 +1,30 @@
 <nav>
   <div class="nav-wrapper">
-    <a href="#" class="brand-logo">Курсы</a>
+    <a href="#" class="brand-logo">Courses</a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       {{#if isHome}}
-      <li class="active"><a href="/">Главная</a></li>
+      <li class="active"><a href="/">Main page</a></li>
       {{ else }}
-      <li><a href="/">Главная</a></li>
+      <li><a href="/">Main page</a></li>
       {{/if}}
 
       {{#if isCourses}}
-      <li class="active"><a href="/courses">Список курсов</a></li>
+      <li class="active"><a href="/courses">List of courses</a></li>
       {{ else }}
-      <li><a href="/courses">Список курсов</a></li>
+      <li><a href="/courses">List of courses</a></li>
       {{/if}}
 
       {{#if isAdd}}
-      <li class="active"><a href="/add">Добавить курс</a></li>
+      <li class="active"><a href="/add">Add course</a></li>
       {{ else }}
-      <li><a href="/add">Добавить курс</a></li>
+      <li><a href="/add">Add course</a></li>
       {{/if}}
 
-
+      {{#if isCard}}
+      <li class="active"><a href="/card">Card</a></li>
+      {{ else }}
+      <li><a href="/card">Card</a></li>
+      {{/if}}
 
     </ul>
   </div>
