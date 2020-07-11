@@ -5,17 +5,17 @@ class Card {
   static async add(course) {
     const card = await Card.fetch();
 
-    const idx = card.courses.findIndex(c => c.id === course.id)
-    const candidate = card.courses[idx]
-    if(candidate) {
-      candidate.count +=1
-      card.courses[idx] = candidate
+    const idx = card.courses.findIndex((c) => c.id === course.id);
+    const candidate = card.courses[idx];
+    if (candidate) {
+      candidate.count += 1;
+      card.courses[idx] = candidate;
     } else {
-      course.count = 1
-      card.courses.push(course)
+      course.count = 1;
+      card.courses.push(course);
     }
 
-    card.price += +course.price
+    card.price += +course.price;
 
     return new Promise((resolve, reject) => {
       fs.writeFile(
@@ -26,6 +26,33 @@ class Card {
             reject(err);
           } else {
             resolve();
+          }
+        }
+      );
+    });
+  }
+
+  static async remove(id) {
+    const card = await Card.fetch();
+    const idx = card.courses.findIndex((c) => c.id === id);
+    const course = card.courses[idx];
+
+    if (course.count === 1) {
+      card.courses = card.courses.filter((c) => c.id !== id);
+    } else {
+      card.courses[idx].count -= 1;
+    }
+    card.price -= course.price;
+
+    return new Promise((resolve, reject) => {
+      fs.writeFile(
+        path.join(__dirname, "..", "data", "card.json"),
+        JSON.stringify(card),
+        (err) => {
+          if (err) {
+            reject(err);
+          } else {
+            resolve(card);
           }
         }
       );
@@ -44,9 +71,9 @@ class Card {
             resolve(JSON.parse(content));
           }
         }
-      )
-    })
+      );
+    });
   }
 }
 
-module.exports = Card
+module.exports = Card;
