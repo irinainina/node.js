@@ -227,7 +227,7 @@ NPM — это менеджер пакетов, используемый Node.js
 
 Сайт NPM можно найти по адресу [https://npmjs.com](https://npmjs.com). Здесь вы можете зарегистрироваться как новый пользователь или поискать нужные пакеты.
 
-![](./chapter2/NodeHeroEbook-TheComplete-008.png)
+![](https://blog.risingstack.com/content/images/2019/08/node_hero_using_npm_tutorial-1459251745286.png)
 
 ## Интерфейс командной строки
 
@@ -365,7 +365,7 @@ try(FileInputStream inputStream = new FileInputStream("foo.txt")) {
 
 Если у вас больше блокирующих операций, очередь событий становится ещё хуже:
 
-![](./chapter3/NodeHeroEbook-TheComplete-009.jpg)
+![](https://blog-assets.risingstack.com/2016/Apr/non_async_blocking_operations_example_in_node_hero-1459856858194.png)
 
 *(Красные полосы отображают промежутки времени, в которые процесс ожидает ответа от внешнего ресурса и блокируется, чёрные полосы показывают, когда ваш код работает, зелёные полосы отображают остальную часть приложения)*
 
@@ -864,8 +864,6 @@ app.post('/users', function (req, res) {
 
 Чтобы запустить PostgreSQL, вам необходимо установить его на свой компьютер. Если вы используете Mac, вы можете использовать Homebrew для установки PostgreSQL. В противном случае, если вы работаете в Linux, вы можете установить его с помощью своего диспетчера пакетов.
 
-![](./chapter5/NodeHeroEbook-TheComplete-010.png)
-
 Для получения дополнительной информации ознакомьтесь с этим отличным [руководством](http://www.techrepublic.com/blog/diy-it-guy/diy-a-postgresql-database-server-setup-anyone-can-handle/) по началу работы с вашей первой базой данных.
 
 Если вы планируете использовать инструмент для просмотра базы данных, я бы рекомендовал утилиту для командной строки — `psql`. Она поставляется вместе с сервером PostgreSQL. Вот небольшая [инструкция](http://www.postgresonline.com/downloads/special_feature/postgresql83_psql_cheatsheet.pdf), которая пригодится, если вы начнёте использовать `psql`.
@@ -1275,7 +1273,7 @@ module.exports = {
 
 *Простая ненавязчивая аутентификация для Node.js - [passportjs.org](http://passportjs.org)*
 
-![](./chapter8/NodeHeroEbook-TheComplete-011.png)
+![](https://blog-assets.risingstack.com/2016/May/Node_js_authentication_using_passport_js-1464012308586.gif)
 
 Passport.js - это middleware для проверки подлинности. Мы будем исполььзовать её для управления сессиями.
 
@@ -1453,7 +1451,7 @@ function authenticationMiddleware () {
 
 Ответ варьируется, но, как правило, вы можете следовать рекомендациям, установленным **пирамидой тестирования**.
 
-![](./chapter9/NodeHeroEbook-TheComplete-012.png)
+![](https://blog-assets.risingstack.com/2016/Jun/test_pyramid_for_node_js_unit_testing-1465216863453.png)
 
 По сути, тестовая пирамида описывает, что вы должны писать **модульные тесты**, **интеграционные тесты** и **e2e тесты**. У вас должно быть больше интеграционных тестов, чем e2e и ещё больше модульных тестов.
 
@@ -1672,7 +1670,7 @@ istanbul cover _mocha $(find ./lib -name \"*.spec.js\" -not -path \"./node_modul
 
 Как только вы это сделаете, вы получите что-то вроде:
 
-![](./chapter9/NodeHeroEbook-TheComplete-013.png)
+![](https://blog-assets.risingstack.com/2016/Jun/node_js_unit_testing_code_coverage-1465216846643.png)
 
 Вы можете кликнуть мышью и на самом деле увидеть, что ваш исходный код аннотирован: какая часть протестирована, а какая — нет.
 
@@ -1711,7 +1709,7 @@ DEBUG=express* node app.js
 
 Вывод в консоль будет выглядеть так:
 
-![](./chapter10/NodeHeroEbook-TheComplete-014.png)
+![](https://blog.risingstack.com/content/images/2019/08/logfile_made_with_the_node_debug_module-1467025068908.png)
 
 ## Встроенный отладчик Node.js
 
@@ -1725,7 +1723,7 @@ node debug app.js
 
 Как только вы это сделаете, вы увидите что-то вроде этого:
 
-![](./chapter10/NodeHeroEbook-TheComplete-015.png)
+![](https://blog.risingstack.com/content/images/2019/08/using_the_built_in_node_js_debugger-1467025131358.png)
 
 ## Базовое использование отладчика Node.js
 
@@ -1768,7 +1766,7 @@ watch('expression')
 
 Когда вы начинаете отладку сложных приложений, визуализация может неплохо помочь. Было бы хорошо использовать знакомый пользовательский интерфейс Chrome DevTools для отладки Node.js-приложений, не правда ли?
 
-![](./chapter10/NodeHeroEbook-TheComplete-016.png)
+![](https://blog.risingstack.com/content/images/2019/08/node_js_chrome_developer_tools_debugging-1467026261217.png)
 
 Хорошие новости! Протокол отладки Chrome уже портирован в Node.js и может использоваться для отладки Node.js-приложений.
 
@@ -1995,11 +1993,11 @@ Password:
 
 ## Деплой на Heroku
 
-![](./chapter12/NodeHeroEbook-TheComplete-017.png)
+![](https://blog.risingstack.com/content/images/2019/03/Create_a_new_app_on_Heroku_to_deploy_Node_js-risingstack.png)
 
 Нажмите «**Create New App**», добавьте новое приложение и выберите регион. Через несколько секунд ваше приложение будет готово, и вы увидите следующий экран:
 
-![](./chapter12/NodeHeroEbook-TheComplete-018.png)
+![](https://blog.risingstack.com/content/images/2019/03/Heroku_welcome_screen-risingstack.png)
 
 Перейдите на страницу настроек приложения и скопируйте git-url. В своём терминале добавьте удаленный url-адрес Heroku:
 
@@ -2021,7 +2019,7 @@ git push heroku master
 
 Чтобы опробовать работу с дополнениями, установите [Trace](https://trace.risingstack.com/), наше решение для мониторинга Node.js. Чтобы сделать это, найдите **Add-ons** на странице своего приложения и начните вводить Trace, затем кликните на ссылку для установки. Легко, правда?
 
-![](./chapter12/NodeHeroEbook-TheComplete-019.png)
+![](https://blog.risingstack.com/content/images/2019/03/Heroku_addons-risingstack.png)
 
 *(Чтобы закончить интеграцию с Trace, следуйте [нашей инструкции](https://trace-docs.risingstack.com/docs/heroku))*
 
@@ -2159,23 +2157,23 @@ docker run IMAGE_ID
 
 После регистрации выполните следующие действия, чтобы добавить Trace в ваше Node.js-приложение. Это займёт всего минуту:
 
-![](./chapter13/NodeHeroEbook-TheComplete-020.png)
+![](https://blog-assets.risingstack.com/2016/Aug/start_node_js_monitoring_with_these_steps-1470233386464.png)
 
 Легко, правда? Если всё пойдёт хорошо, вы увидите, что подключённый сервис только что начал отправлять данные в Trace:
 
-![](./chapter13/NodeHeroEbook-TheComplete-021.png)
+![](https://blog-assets.risingstack.com/2016/Aug/reporting_service_in_trace_for_node_js_monitoring-1470232787308.png)
 
 ## #1: Измерьте свою производительность
 
 В качестве первого шага мониторинга вашего Node.js-приложения я рекомендую перейти на страницу метрик и проверить производительность ваших сервисов.
 
-![](./chapter13/NodeHeroEbook-TheComplete-022.png)
+![](https://blog-assets.risingstack.com/2016/Aug/basic_node_js_performance_metrics-1472206868701.png)
 
 * Вы можете использовать панель времени ответа для проверки медианы и 95-го перцентиля. Это поможет вам понять, когда и почему ваше приложение замедляется и как оно влияет на ваших пользователей.
 * График пропускной способности показывает количество запросов в минуту (*rpm*) для категорий кодов состояния (200-299 // 300-399 // 400-499 //> 500). Таким образом, вы сможете легко отделить здоровые и проблемные HTTP-запросы в своём приложении.
 * График использования памяти показывает, сколько памяти использует ваш процесс. Это очень полезно для распознавания утечек памяти и предотвращения сбоев.
 
-![](./chapter13/NodeHeroEbook-TheComplete-023.png)
+![](https://blog-assets.risingstack.com/2016/Aug/advanced_node_js_performance_metrics-1472206878220.png)
 
 Если вы хотите увидеть специальные метрики Node.js, проверьте графики сбора мусора и графики циклов событий. Они могут помочь вам отследить утечки памяти. Прочтите нашу [документацию по метрикам](http://trace-docs.risingstack.com/docs/service-metrics).
 
@@ -2193,7 +2191,7 @@ docker run IMAGE_ID
 
 Перейдите на страницу *Profiler* и запросите новый дамп памяти, подождите 5 минут и запросите другой. Загрузите их и откройте на странице *Profiles* Chrome DevTool. Выберите вторую (самую последнюю) и нажмите *Comparison*.
 
-![](./chapter13/NodeHeroEbook-TheComplete-024.png)
+![](https://blog-assets.risingstack.com/2016/Aug/chrome_heap_snapshot_for_finding_a_node_js_memory_leak-1472204543263.png)
 
 Этим способом вы можете легко найти утечки памяти в вашем приложении. Мы подробно описали этот процесс, вы можете прочитать его здесь: [Охота на привидение — Поиск утечки памяти в Node.js](https://blog.risingstack.com/finding-a-memory-leak-in-node-js/)
 
@@ -2203,7 +2201,7 @@ docker run IMAGE_ID
 
 Все, что вам нужно сделать, перейти на вкладку **CPU Profiles** на странице * Profiler*. Здесь вы можете запросить и скачать профиль, который вы можете загрузить в Chrome DevTool. После того, как вы его загрузили, вы сможете увидеть 10-секундный фрейм своего приложения и просмотреть все свои функции с таймингами и URL-адресами.
 
-![](./chapter13/NodeHeroEbook-TheComplete-025.png)
+![](https://blog-assets.risingstack.com/2016/Aug/cpu_profiling_in_trace-1470237521430.png)
 
 С помощью этих данных вы сможете выяснить, что замедляет ваше приложение и справиться с этим!
 
