@@ -1,0 +1,19 @@
+{
+  "name": "telegrammbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node.js"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ansi": "^0.3.1",
+    "beeper": "^1.1.1",
+    "node-telegram-bot-api": "^0.30.0"
+  }
+}
