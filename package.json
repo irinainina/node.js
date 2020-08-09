@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ansi": "^0.3.1",
+    "chalk": "^4.1.0",
+    "express": "^4.17.1",
+    "inquirer": "^7.3.3",
+    "lodash": "^4.17.19",
+    "minimist": "^1.2.5",
+    "nodemon": "^2.0.4",
+    "progress": "^2.0.3"
+  }
+}
