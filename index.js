@@ -1,19 +1,19 @@
-let request = require("request");
-let readline = require("readline");
-let colors = require("colors");
+const request = require("request");
+const readline = require("readline");
+const colors = require("colors");
 
 function requestWords() {
-  let requestWords = readline.createInterface({
+  console.log("Русско-Английский переводчик".green);
+  const requestWords = readline.createInterface({
     input: process.stdin,
-    output: process.stdout,
-    terminal: false,
+    output: process.stdout
   });
 
   requestWords.question(
     "Введите слово или фразу на русском языке - ".red,
     (answer) => {
       requestWords.close();
-      let encodeWordUri = encodeURI(answer);
+      const encodeWordUri = encodeURI(answer);
       request(
         "https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20200322T155651Z.de98a60e6a99185e.089aea4237b51c6db082c966f27a7895cd1e8b44&text=" +
           encodeWordUri +
@@ -29,5 +29,5 @@ function requestWords() {
     }
   );
 }
-console.log("Русско-Английский переводчик".green);
+
 requestWords();
