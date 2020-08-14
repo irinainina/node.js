@@ -1,0 +1,22 @@
+<h2>Jokes</h2>
+
+<form action="/news" method="POST">
+    <input type="number" value=10 name="count" /><br/>
+    <select name="source">
+        <option value="bash" selected="selected">Bash.org</option>
+        <option value="anekdot">Anekdot.ru</option>
+    </select>
+    <input type="submit" value="Отправить" />
+</form>
+
+{{#if err}}
+    <h3>{{err}}</h3>
+{{/if}}
+
+{{#if news}}
+    <ul>
+    {{#each news}}
+        <li>{{this}}</li>
+    {{/each}}
+    </ul>
+{{/if}}
