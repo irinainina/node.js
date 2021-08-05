@@ -1,0 +1,1 @@
+### Code example for [notes: refactoring](https://irinainina.github.io/node-hints/#/node/projects/notes-refactoring)
